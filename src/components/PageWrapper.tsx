@@ -12,9 +12,9 @@ const PageWrapper: Component<ParentProps> = (props: ParentProps) => {
         easing: spring({ damping: 25, stiffness: 160 }),
         allowWebkitAcceleration: true,
       }}
-      class="col-span-full row-span-full"
+      class="col-span-full row-span-full mx-auto"
     >
-      {props.children}
+      <div class="m-2 inline-block">{props.children}</div>
     </Motion.div>
   );
 };
