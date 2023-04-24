@@ -4,12 +4,14 @@
 
 ## What's inside
 
-- [Motion One](https://motion.dev/)
+- [SolidJS](https://solidjs.com)
+- [Typescript](https://www.typescriptlang.org/)
 - [ESlint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
+- [Motion One](https://motion.dev/)
 - [TailwindCSS](https://tailwindcss.com/)
-- [Typescript](https://www.typescriptlang.org/)
-- [SolidJS](https://solidjs.com)
+- [Solid Icons](https://solid-icons.vercel.app/)
+- [SolidJS Router](https://github.com/solidjs/solid-router)
 
 ## Recommendations
 
@@ -57,4 +59,4 @@ Your app is ready to be deployed!
 
 ## Deployment
 
-You can deploy the `dist` folder to any static host provider (netlify, surge, now, etc.)
+You can deploy the `dist` folder to any static host provider (pages.dev, vercel, netlify, etc.)
