@@ -21,8 +21,8 @@ const Home: Component = () => {
 
       <Motion.div
         class="mx-auto pt-10 text-center"
-        initial={{ filter: 'opacity(0)', transform: 'translateY(2rem)' }}
-        animate={{ filter: 'opacity(1)', transform: 'translateY(0)' }}
+        initial={{ opacity: 0, transform: 'translateY(2rem)' }}
+        animate={{ opacity: 1, transform: 'translateY(0)' }}
         transition={{
           allowWebkitAcceleration: true,
           easing: spring({ damping: 15, stiffness: 100 }),

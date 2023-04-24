@@ -61,14 +61,27 @@ const App: Component = () => {
           <PageNav />
         </div>
 
-        <div class="z-0 grid h-fit w-full">
-          <Presence>
+        <Motion.div
+          class="z-0 grid h-fit w-full"
+          initial={{
+            transform: 'translateY(-8rem) scale(25%, 75%)',
+            filter: 'opacity(0) blur(0.25rem)',
+          }}
+          animate={{
+            transform: 'translateY(0) scale(100%, 100%)',
+            filter: 'opacity(1) blur(0)',
+          }}
+          transition={{
+            easing: spring({ damping: 30, stiffness: 200 }),
+          }}
+        >
+          <Presence initial={false}>
             <Routes>
               <Route path="/" component={Home} />
               <Route path="/page1" component={Page1} />
             </Routes>
           </Presence>
-        </div>
+        </Motion.div>
       </Router>
     </>
   );

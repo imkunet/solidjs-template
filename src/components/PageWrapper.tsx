@@ -9,8 +9,8 @@ const PageWrapper: Component<ParentProps> = (props: ParentProps) => {
       animate={{ filter: 'opacity(1)', transform: 'translateY(0)' }}
       exit={{ filter: 'opacity(0)', transform: 'translateY(-100%)' }}
       transition={{
-        easing: spring({ damping: 25, stiffness: 160 }),
         allowWebkitAcceleration: true,
+        easing: spring({ damping: 25, stiffness: 160 }),
       }}
       class="col-span-full row-span-full mx-auto"
     >

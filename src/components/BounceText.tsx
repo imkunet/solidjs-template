@@ -32,9 +32,10 @@ const BounceText: Component<BounceTextProps> = (propsIn) => {
                 {(char) => (
                   <Motion.span
                     class="inline-block"
-                    initial={{ x: -10, y: 50, scale: 0.75, rotate: 15, opacity: 0 }}
-                    animate={{ x: 0, y: 0, scale: 1.0, rotate: 0, opacity: 1 }}
+                    initial={{ x: -10, y: 50, scale: 0.75, rotate: 15, filter: 'opacity(0)' }}
+                    animate={{ x: 0, y: 0, scale: 1.0, rotate: 0, filter: 'opacity(1)' }}
                     transition={{
+                      allowWebkitAcceleration: true,
                       easing: spring({ damping: 15, stiffness: 160 }),
                       delay: props.initialDelay + i++ * props.stagger,
                     }}
