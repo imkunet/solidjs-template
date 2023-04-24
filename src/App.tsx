@@ -29,7 +29,7 @@ const PageNavLink: Component<PageNavLinkProps> = (props: PageNavLinkProps) => {
 const PageNav: Component = () => {
   return (
     <Motion.div
-      class="z-50 m-4 inline-flex max-w-xs flex-row justify-center gap-4 rounded-full bg-zinc-700/20 px-6 py-4 shadow outline outline-2 outline-zinc-700/40 backdrop-blur-lg"
+      class="z-50 m-4 inline-flex max-w-xs flex-row justify-center gap-4 rounded-full bg-zinc-700/20 px-6 py-4 shadow backdrop-blur-lg"
       initial={{
         transform: 'rotate3d(1, 0, 0, 90deg) translateZ(4rem) scaleX(25%)',
         filter: 'blur(0.5rem)',
