@@ -32,7 +32,7 @@ const Home: Component = () => {
         <a
           href="https://github.com/imkunet/solidjs-template"
           target="_blank"
-          class="inline-flex items-center gap-1 text-xl text-white underline decoration-cyan-500 decoration-wavy decoration-2 underline-offset-0"
+          class="inline-flex items-center gap-1 fill-white text-xl text-white underline decoration-cyan-500 decoration-wavy decoration-2"
         >
           <BiLogosGithub />
           GitHub

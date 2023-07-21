@@ -15,9 +15,9 @@ type PageNavLinkProps = ComponentProps<'a'> & {
 const PageNavLink: Component<PageNavLinkProps> = (props: PageNavLinkProps) => {
   return (
     <Link
-      inactiveClass="text-gray-400"
+      inactiveClass="text-gray-400 fill-gray-400"
       class="inline-flex items-center gap-1 transition-all"
-      activeClass="font-bold text-white"
+      activeClass="font-bold text-white fill-white"
       {...props}
     >
       {props.children}
